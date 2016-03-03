@@ -1,1 +1,4 @@
 <h1>Home Page Goes Here</h1>
+<% @feed.checkins.items.each do |checkin| %>
+  <p><%= checkin.beer.beer_name %></p>
+<% end %>
